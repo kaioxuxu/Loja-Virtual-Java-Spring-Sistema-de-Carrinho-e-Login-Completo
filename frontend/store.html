@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja</title>
+  </head>
+  <body>
+    <div>
+      <h2>Bem-vindo, <span id="userName"></span></h2>
+      <p>
+        CPF: <span id="userCpf"></span> | Email: <span id="userEmail"></span>
+      </p>
+
+      <div id="products"></div>
+
+      <div id="cartInfo">
+        <button id="goToCartButton">
+          Carrinho (<span id="cartCount">0</span>)
+        </button>
+      </div>
+    </div>
+
+    <!-- Importa o arquivo JavaScript externo -->
+    <script src="js/store.js"></script>
+  </body>
+</html>
