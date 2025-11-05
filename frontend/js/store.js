@@ -1,4 +1,3 @@
-// ✅ Obtém o usuário logado do sessionStorage
 console.log("store.js carregado com sucesso!");
 
 console.log('ola');
@@ -15,14 +14,12 @@ if (user) {
   document.getElementById("userEmail").innerText = user.email || "N/A";
 }
 
-// ✅ Produtos de exemplo
 const produtos = [
   { id: 1, nome: "Produto A", preco: 10.0 },
   { id: 2, nome: "Produto B", preco: 20.0 },
   { id: 3, nome: "Produto C", preco: 30.0 },
 ];
 
-// ✅ Renderiza produtos na tela
 const prodDiv = document.getElementById("products");
 produtos.forEach((p) => {
   const div = document.createElement("div");
@@ -36,7 +33,6 @@ produtos.forEach((p) => {
   prodDiv.appendChild(div);
 });
 
-// ✅ Adiciona item ao carrinho
 async function addToCart(prodId) {
   console.log("Enviando ao backend:", {
     userId: user.id,
@@ -69,7 +65,6 @@ async function addToCart(prodId) {
   }
 }
 
-// ✅ Atualiza número de itens no carrinho
 async function updateCartCount() {
     console.log('ta chegando aqui');
   if (!user || !user.id) return;
@@ -97,10 +92,7 @@ async function updateCartCount() {
   }
 }
 
-/// ✅ Executa updateCartCount assim que a página carrega
 document.addEventListener("DOMContentLoaded", updateCartCount);
-
-// ✅ Botão "Ir para o carrinho"
 console.log("store.js carregado com sucesso!");
 
 const goToCartButton = document.getElementById("goToCartButton");
@@ -112,5 +104,5 @@ if (goToCartButton) {
     window.location.href = "cart.html";
   });
 } else {
-  console.error("❌ Botão 'goToCartButton' não foi encontrado no DOM!");
+  console.error(" Botão 'goToCartButton' não foi encontrado no DOM!");
 }

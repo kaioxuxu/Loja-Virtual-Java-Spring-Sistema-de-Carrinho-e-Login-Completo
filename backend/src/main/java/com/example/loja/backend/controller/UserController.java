@@ -15,7 +15,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    // ✅ Registro de usuário
     @PostMapping("/register")
     public User register(@RequestBody Map<String, String> body) {
         User user = new User();
@@ -28,7 +27,6 @@ public class UserController {
         return userService.register(user, criptografar);
     }
 
-    // ✅ Login do usuário
     @PostMapping("/login")
     public User login(@RequestBody Map<String, String> body) {
         String cpf = body.get("cpf");

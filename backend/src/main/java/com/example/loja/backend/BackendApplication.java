@@ -18,9 +18,6 @@ public class BackendApplication {
 		SpringApplication.run(BackendApplication.class, args);
 	}
 
-
-
-	// ✅ Desativa o login padrão e permite tudo
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		http.csrf(csrf -> csrf.disable())
@@ -30,7 +27,6 @@ public class BackendApplication {
 		return http.build();
 	}
 
-	// ✅ Adiciona o bean de PasswordEncoder (resolve seu erro)
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
