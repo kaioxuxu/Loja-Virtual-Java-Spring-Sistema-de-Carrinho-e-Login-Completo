@@ -28,7 +28,7 @@ O sistema permite cadastrar e logar usuários, listar produtos, adicionar itens 
 
 ### 3. Frontend
 - Copie a pasta do frontend (que contém o arquivo `index.html`) para dentro da pasta: C:\xampp\htdocs\
-- No navegador, acesse: http://localhost/frontend/index.html 
+- No navegador, acesse: http://localhost/frontend/register.html 
 
 
 ## Testando
