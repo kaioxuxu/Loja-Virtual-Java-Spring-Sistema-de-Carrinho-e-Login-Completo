@@ -1,6 +1,6 @@
 console.log("store.js carregado com sucesso!");
 
-console.log('ola');
+console.log("ola");
 const userJson = sessionStorage.getItem("user");
 const user = userJson ? JSON.parse(userJson) : null;
 
@@ -66,7 +66,7 @@ async function addToCart(prodId) {
 }
 
 async function updateCartCount() {
-    console.log('ta chegando aqui');
+  console.log("ta chegando aqui");
   if (!user || !user.id) return;
 
   try {
